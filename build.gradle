@@ -1,0 +1,24 @@
+group 'com.ningyuwen'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.10.3'
+
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.40'
+
+    // https://mvnrepository.com/artifact/net.cgrand/regex
+    compile group: 'net.cgrand', name: 'regex', version: '1.1.0'
+
+}
